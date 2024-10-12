@@ -12,15 +12,7 @@ export default function Lognin() {
     passowrd: "",
   });
   
-  const onlogin = async () => {
-    try {
-      const response = await axios.post("/api/users/login", user);
-      toast('signed in successfully')
-    } catch (error) {
-      throw error
-    }
-  }
-
+ 
   return (
     <div className="Containor flex w-9/12 justify- items-center ">
       <div><Toaster/></div>
