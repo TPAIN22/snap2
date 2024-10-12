@@ -19,7 +19,7 @@ export default function Signup() {
       const response = await axios.post("/api/users/signup", user)
       console.log(response.data)
       toast('signed up successfully')
-    }catch (error:any) {
+    }catch (error) {
       throw error     
     }
   };

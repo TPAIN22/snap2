@@ -16,7 +16,7 @@ export async function connect(): Promise<void> {
 
         // Listen for the error event
         connection.on('error' , (err) =>{
-            console.log(`monngodb is not connected {err}`);
+            console.log({err});
             process.exit();
         })
     } catch (error) {

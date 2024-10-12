@@ -1,9 +1,7 @@
 'use client'
-import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import  toast , { Toaster } from "react-hot-toast";
 
 export default function Lognin() {
   const [user, setUser] = useState({
@@ -15,7 +13,7 @@ export default function Lognin() {
  
   return (
     <div className="Containor flex w-9/12 justify- items-center ">
-      <div><Toaster/></div>
+
       <div className="Signup flex flex-col gap-8 flex-1 items-center">
         
         <div className="grid gap-2 w-3/5">
