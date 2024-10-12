@@ -20,7 +20,8 @@ export async function POST(req: NextRequest) {
         const newUser = new User({ username, email, password: hashedPassword });
         await newUser.save();
         return NextResponse.json({ message: "User created successfully", user: newUser }, { status: 201 });
-    } catch (error: any ) {
-        return NextResponse.json({ error: error.message }, { status: 500 });
+    } catch (error) {
+        console.log(error);
+        return NextResponse.json({ error: "Something went wrong" } , { status: 500 });
     }
 }
